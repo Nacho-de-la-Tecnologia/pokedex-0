@@ -5,15 +5,15 @@
     <title>Pokedex</title>
 </head>
     <body>
-        <main>
+        <main class="flex-container">
             <h1 class="title">Pokedex</h1>
-            <form>
-              <input type="text"
+            <form class="flex-form" action="">
+              <input id="pokemon-input" type="text" required minlength="1" maxlength="30"
                placeholder="Pokemon Name o ID">
-               <input type="button" value="Send">
+               <input id="btn-submit" type="button" value="Send">
             </form>
-            <div>
-               <img src="" >
+            <div id="card">
+               <img src="" id="poke-img" >
                <div>
                 <p></p>
                 <p>ID:</p>
