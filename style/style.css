@@ -8,23 +8,42 @@ body {
   background-color: #14a5ff;
 }
 
+main {
+  font-family: Helvetica;
+  padding: 10px;
+}
+
 .title {
   font-size: 40px;
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   color: #ffcb08;
   -webkit-text-stroke-color: #2b6fb6;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2.00px;
   text-align: center;
   margin: 40px 10px;
 }
 
-.flex-container,
-.flex-form {
+.flex-container, .flex-form {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+#btn-submit, #pokemon-input {
+  font-size: 18px;
+  padding: 10px 13px;
+}
+
+#btn-submit {
+  color: #fff;
+  background-color: #2b6fb6;
+  border: none;
+}
+
+#btn-submit:hover {
+  background-color: #307dcf;
 }
 
 #pokemon-input {
@@ -33,36 +52,60 @@ body {
   max-width: 480px;
 }
 
-#btn-submit, #pokemon-input{
-    font-size: 18px;
-    padding: 10px;
+#card {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 300px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-color: #fff;
 }
 
-#btn-submit {
-  color: #fff;
-  background-color: #2b6fb6;
-  border: no;
+#card:hover {
+  box-shadow: 0 19px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-#btn-submit:hover{
-    background-color: #307dcf;
+.card-container {
+  font-weight: bold;
+  padding: 10px 15px 15px 15px;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#card{
-    margin: auto;
-    margin: top 20px;
-    max-width: 300px;
-    box-shadow: 0 19px 28px rgba(0,0,0,0.19), 0 15px 12px rgba(0,0,0,0.23) ;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    background-color: #fff;
+#name {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  padding-bottom: 20px;
 }
 
-#card:hover{
-    box-shadow: 0 19px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) ;
+.item-content, .item-info {
+  line-height: 30px;
 }
 
-#poke-img{
-    display: block;
-    width: 65%;
-    margin: 10px auto;
+.item-content {
+  width: 70%;
+}
+
+.item-info {
+  width: 30%;
+}
+
+#poke-img {
+  display: block;    
+  width: 65%;
+  margin: 10px auto;
+}
+
+#card-error {
+  color: #f00;
+  font-size: 24px;
+  text-align: center;
+}
+
+.invisible {
+  display: none;
 }
